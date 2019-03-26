@@ -11,9 +11,23 @@ def roman_to_decimal(roman_number):
                 decimal_number = decimal_number - 2
              
         if letter == 'X':
-            decimal_number = decimal_number +10
+            decimal_number = decimal_number + 10
             if ant == 'I':
                 decimal_number = decimal_number - 2
+        
+        if letter == 'L':
+            decimal_number = decimal_number + 50
+            if ant == 'I':
+                decimal_number = decimal_number - 2
+            if ant == 'X':
+                decimal_number = decimal_number - 20
+
+        if letter == 'C':
+            decimal_number = decimal_number + 100
+            if ant == 'I':
+                decimal_number = decimal_number - 2
+            if ant == 'X':
+                decimal_number = decimal_number - 20
         
         ant = letter
 
