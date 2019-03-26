@@ -112,9 +112,9 @@ class TestRomanNumbers(unittest.TestCase):
 
         decimal_number = roman_to_decimal('XLIII')
         self.assertEqual(decimal_number,43)    
-    def test_roman_LIIX_to_decimal(self):
+    def test_roman_LVIII_to_decimal(self):
 
-        decimal_number = roman_to_decimal('LIIX')
+        decimal_number = roman_to_decimal('LVIII')
         self.assertEqual(decimal_number,58)
     def test_roman_LXXII_to_decimal(self):
 
@@ -123,28 +123,31 @@ class TestRomanNumbers(unittest.TestCase):
 
     def test_roman_LXXXVII_to_decimal(self):
 
-        decimal_number = roman_to_decimal('XVIII')
+        decimal_number = roman_to_decimal('LXXXVII')
         self.assertEqual(decimal_number,87)
     def test_roman_XCI_to_decimal(self):
         decimal_number = roman_to_decimal('XCI')
         self.assertEqual(decimal_number,91)
 
-    def test_roman_IC_to_decimal(self):
+    def test_roman_XCIX_to_decimal(self):
 
-        decimal_number = roman_to_decimal('IC')
+        decimal_number = roman_to_decimal('XCIX')
         self.assertEqual(decimal_number,99)
     def test_roman_CI_to_decimal(self):
 
         decimal_number = roman_to_decimal('CI')
         self.assertEqual(decimal_number,101)
+
     def test_roman_CXLIX_to_decimal(self):
 
         decimal_number = roman_to_decimal('CXLIX')
-        self.assertEqual(decimal_number,149)     
-    def test_roman_CLDXXVIII_to_decimal(self):
+        self.assertEqual(decimal_number,149)
 
-        decimal_number = roman_to_decimal('CLDXXVIII')
+    def test_roman_CDLXXVIII_to_decimal(self):
+
+        decimal_number = roman_to_decimal('CDLXXVIII')
         self.assertEqual(decimal_number,478)
+
     def test_roman_DCXCIII_to_decimal(self):
 
         decimal_number = roman_to_decimal('DCXCIII')
