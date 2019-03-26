@@ -13,11 +13,16 @@ class TestRomanNumbers(unittest.TestCase):
 
     def test_roman_III_to_decimal(self) :
         decimal_number = roman_to_decimal('III')
-        self.assertEqual(decimal_number,3)   
+        self.assertEqual(decimal_number,3) 
+
+    def test_roman_IV_to_decimal(self) :
+        decimal_number = roman_to_decimal('IV')
+        self.assertEqual(decimal_number,4)
 
     def test_roman_V_to_decimal(self) :
         decimal_number = roman_to_decimal('V')
         self.assertEqual(decimal_number,5) 
+        
 
 
 if __name__ == '__main__':
