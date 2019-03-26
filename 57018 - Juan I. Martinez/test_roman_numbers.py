@@ -15,7 +15,11 @@ class TestRomanNumbers(unittest.TestCase):
 
     def test_roman_III_to_decimal(self):
         decimal_number = roman_to_decimal('III')
-        self.assertEqual(decimal_number, 3)   
+        self.assertEqual(decimal_number, 3)  
+
+    def test_roman_IV_to_decimal(self):
+        decimal_number = roman_to_decimal('IV')
+        self.assertEqual(decimal_number, 4) 
 
     def test_roman_V_to_decimal(self):
         decimal_number = roman_to_decimal('V')
@@ -33,6 +37,10 @@ class TestRomanNumbers(unittest.TestCase):
         decimal_number = roman_to_decimal('VIII')
         self.assertEqual(decimal_number, 8)  
 
+    def test_roman_IX_to_decimal(self):
+        decimal_number = roman_to_decimal('IX')
+        self.assertEqual(decimal_number, 9) 
+
     def test_roman_X_to_decimal(self):
         decimal_number = roman_to_decimal('X')
         self.assertEqual(decimal_number, 10)     
@@ -40,6 +48,20 @@ class TestRomanNumbers(unittest.TestCase):
     def test_roman_XI_to_decimal(self):
         decimal_number = roman_to_decimal('XI')
         self.assertEqual(decimal_number, 11)   
+
+    def test_roman_XII_to_decimal(self):
+        decimal_number = roman_to_decimal('XII')
+        self.assertEqual(decimal_number, 12) 
+
+    def test_roman_XIII_to_decimal(self):
+        decimal_number = roman_to_decimal('XIII')
+        self.assertEqual(decimal_number, 13)  
+    
+    def test_roman_XIV_to_decimal(self):
+        decimal_number = roman_to_decimal('XIV')
+        self.assertEqual(decimal_number, 14)  
+
+
 
 if __name__ == '__main__':
     unittest.main()
