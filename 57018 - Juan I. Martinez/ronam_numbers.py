@@ -25,6 +25,8 @@ def roman_to_decimal(roman_number):
 
         elif letter == "C":
             decimal_number += 100
+            if ant == 'X':
+                decimal_number -= 20
 
         elif letter == "D":
             decimal_number += 500
