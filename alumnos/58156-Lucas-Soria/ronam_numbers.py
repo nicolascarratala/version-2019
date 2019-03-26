@@ -50,7 +50,3 @@ def roman_to_decimal(roman_number):
                 decimal_number -= 2
         ant = x
     return decimal_number
-
-    # C 100
-    # D 500
-    # M 1000
