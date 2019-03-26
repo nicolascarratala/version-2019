@@ -103,7 +103,56 @@ class TestRomanNumbers(unittest.TestCase):
     def test_roman_XVIII_to_decimal(self):
 
         decimal_number = roman_to_decimal('XVIII')
-        self.assertEqual(decimal_number,18)            
+        self.assertEqual(decimal_number,18)
+    def test_roman_XIV_to_decimal(self):
+
+        decimal_number = roman_to_decimal('XIV')
+        self.assertEqual(decimal_number,24)
+    def test_roman_XLIII_to_decimal(self):
+
+        decimal_number = roman_to_decimal('XLIII')
+        self.assertEqual(decimal_number,43)    
+    def test_roman_LIIX_to_decimal(self):
+
+        decimal_number = roman_to_decimal('LIIX')
+        self.assertEqual(decimal_number,58)
+    def test_roman_LXXII_to_decimal(self):
+
+        decimal_number = roman_to_decimal('LXXII')
+        self.assertEqual(decimal_number,72)
+
+    def test_roman_LXXXVII_to_decimal(self):
+
+        decimal_number = roman_to_decimal('XVIII')
+        self.assertEqual(decimal_number,87)
+    def test_roman_XCI_to_decimal(self):
+        decimal_number = roman_to_decimal('XCI')
+        self.assertEqual(decimal_number,91)
+
+    def test_roman_IC_to_decimal(self):
+
+        decimal_number = roman_to_decimal('IC')
+        self.assertEqual(decimal_number,99)
+    def test_roman_CI_to_decimal(self):
+
+        decimal_number = roman_to_decimal('CI')
+        self.assertEqual(decimal_number,101)
+    def test_roman_CXLIX_to_decimal(self):
+
+        decimal_number = roman_to_decimal('CXLIX')
+        self.assertEqual(decimal_number,149)     
+    def test_roman_CLDXXVIII_to_decimal(self):
+
+        decimal_number = roman_to_decimal('CLDXXVIII')
+        self.assertEqual(decimal_number,478)
+    def test_roman__to_decimal(self):
+
+        decimal_number = roman_to_decimal('')
+        self.assertEqual(decimal_number,693)  
+    def test_roman_4_to_decimal(self):
+
+        decimal_number = roman_to_decimal('')
+        self.assertEqual(decimal_number,954)                     
 if __name__ == '__main__':
 
    unittest.main()
