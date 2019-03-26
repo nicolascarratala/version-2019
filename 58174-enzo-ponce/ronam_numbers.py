@@ -15,6 +15,6 @@ def roman_to_decimal(roman_number):
          if ant == 'I':
             decimal_number = decimal_number -2
 
-   ant = letter
+      ant = letter
 
    return decimal_number
