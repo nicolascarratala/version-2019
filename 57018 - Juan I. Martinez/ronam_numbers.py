@@ -30,9 +30,13 @@ def roman_to_decimal(roman_number):
 
         elif letter == "D":
             decimal_number += 500
+            if ant == 'C':
+                decimal_number -= 200           
 
         elif letter == "M":
             decimal_number += 1000
+            if ant == 'C':
+                decimal_number -= 200 
 
         ant = letter
         

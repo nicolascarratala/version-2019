@@ -88,6 +88,33 @@ class TestRomanNumbers(unittest.TestCase):
     def test_roman_XCIX_to_decimal(self):
         decimal_number = roman_to_decimal('XCIX')
         self.assertEqual(decimal_number, 99) 
+
+    def test_roman_CI_to_decimal(self):
+        decimal_number = roman_to_decimal('CI')
+        self.assertEqual(decimal_number, 101) 
+    
+    def test_roman_CXLIX_to_decimal(self):
+        decimal_number = roman_to_decimal('CXLIX')
+        self.assertEqual(decimal_number, 149) 
+
+    def test_roman_CDLXXVIII_to_decimal(self):
+        decimal_number = roman_to_decimal('CDLXXVIII')
+        self.assertEqual(decimal_number, 478) 
+
+    def test_roman_DCXCIII_to_decimal(self):
+        decimal_number = roman_to_decimal('DCXCIII')
+        self.assertEqual(decimal_number, 693) 
+    
+    def test_roman_CMLIV_to_decimal(self):
+        decimal_number = roman_to_decimal('CMLIV')
+        self.assertEqual(decimal_number, 954) 
+    
+    def test_roman_CMXCIX_to_decimal(self):
+        decimal_number = roman_to_decimal('CMXCIX')
+        self.assertEqual(decimal_number, 999) 
+
+    
+    
     
 
     
