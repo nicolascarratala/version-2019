@@ -14,7 +14,7 @@ class TestRomanNumbers(unittest.TestCase):
     def test_roman_III_to_decimal(self):
         decimal_number = roman_to_decimal('III')
         self.assertEqual(decimal_number, 3)
-    
+
     def test_roman_V_to_decimal(self):
         decimal_number = roman_to_decimal('V')
         self.assertEqual(decimal_number, 5)
