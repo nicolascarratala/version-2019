@@ -34,5 +34,19 @@ def roman_to_decimal(roman_number):
                 pass
             pass
         pass
+        if letter == 'D':
+            decimal_number = decimal_number + 500
+            if ant == 'C':
+                decimal_number = decimal_number - 200
+                pass
+            pass
+        pass
+        if letter == 'M':
+            decimal_number = decimal_number + 1000
+            if ant == 'C':
+                decimal_number = decimal_number - 200
+                pass
+            pass
+        pass
         ant = letter
     return decimal_number
