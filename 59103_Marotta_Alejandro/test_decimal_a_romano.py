@@ -7,6 +7,25 @@ class TestDecimal(unittest.TestCase):
         self.assertEqual(romanotest, 'I')
 
 
+    def test_2 (self):
+        romanotest = decimal_a_romano('2')
+        self.assertEqual(romanotest, 'II')
+        
+    def test_3 (self):
+        romanotest = decimal_a_romano('3')
+        self.assertEqual(romanotest, 'III')
+
+    def test_4 (self):
+        romanotest = decimal_a_romano('4')
+        self.assertEqual(romanotest, 'IV')
+
+    def test_5 (self):
+        romanotest = decimal_a_romano('5')
+        self.assertEqual(romanotest, 'V')
+
+
+
+
 
 
 
