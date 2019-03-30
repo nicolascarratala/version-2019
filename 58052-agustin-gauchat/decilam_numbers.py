@@ -3,7 +3,7 @@ def decimal_to_roman(decimal_number):
     ant = ""
     
     for letter in decimal_number:
-        if int(decimal_number) < 9:
+        if int(letter) < 9:
             if letter == '1':
                 romann_number = romann_number + "I"
 
