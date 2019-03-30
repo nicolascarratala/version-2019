@@ -1,19 +1,17 @@
 def decimal_to_roman(decimal_number):
-    romann_number = ""
-    ant = ""
     
-    for letter in decimal_number:
-        if int(letter) < 9:
-            if letter == '1':
-                romann_number = romann_number + "I"
+    roman_number = ""
+    
+    unidad = decimal_number%10
+    decimal_number = decimal_number/10
+    decena = decimal_number%10
+    decimal_number = decimal_number/10
+    centena = decimal_number%10
+    mil = decimal_number/10
 
-            if letter == '2':
-                romann_number = romann_number + "II"
-            
-            if letter == '3':
-                romann_number = romann_number + "III"
-        
-        ant = letter
+    if unidad == 1:
+        roman_number = roman_number + "I"
 
 
-    return romann_number
+
+    return roman_number
