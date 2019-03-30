@@ -10,6 +10,17 @@ def decimal_to_roman(decimal_number):
     mil = int(decimal_number/10)
 
 
+    #MILES
+
+    if mil == 1:
+        roman_number = roman_number + "M"
+
+    if mil == 2:
+        roman_number = roman_number + "MM"
+
+    if mil == 3:
+        roman_number = roman_number + "MMM"
+
     #CENTENAS
 
     if centena == 1:

@@ -39,6 +39,14 @@ class TestsDecimalNumbers(unittest.TestCase) :
         roman_number = decimal_to_roman(72)
         self.assertEqual(roman_number, "LXXII")
 
+    def test_decimal_87_to_roman(self):
+        roman_number = decimal_to_roman(87)
+        self.assertEqual(roman_number, "LXXXVII")
+
+    def test_decimal_91_to_roman(self):
+        roman_number = decimal_to_roman(91)
+        self.assertEqual(roman_number, "XCI")
+
     def test_decimal_99_to_roman(self):
         roman_number = decimal_to_roman(99)
         self.assertEqual(roman_number, "XCIX")
@@ -46,6 +54,22 @@ class TestsDecimalNumbers(unittest.TestCase) :
     def test_decimal_149_to_roman(self):
         roman_number = decimal_to_roman(149)
         self.assertEqual(roman_number, "CXLIX")
+
+    def test_decimal_478_to_roman(self):
+        roman_number = decimal_to_roman(478)
+        self.assertEqual(roman_number, "CDLXXVIII")
+
+    def test_decimal_693_to_roman(self):
+        roman_number = decimal_to_roman(693)
+        self.assertEqual(roman_number, "DCXCIII")
+
+    def test_decimal_954_to_roman(self):
+        roman_number = decimal_to_roman(954)
+        self.assertEqual(roman_number, "CMLIV")
+
+    def test_decimal_999_to_roman(self):
+        roman_number = decimal_to_roman(999)
+        self.assertEqual(roman_number, "CMXCIX")
 
 
 if __name__ == '__main__':
