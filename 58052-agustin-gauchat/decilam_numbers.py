@@ -2,12 +2,71 @@ def decimal_to_roman(decimal_number):
     
     roman_number = ""
     
-    unidad = decimal_number%10
+    unidad = int(decimal_number%10)
     decimal_number = decimal_number/10
-    decena = decimal_number%10
+    decena = int(decimal_number%10)
     decimal_number = decimal_number/10
-    centena = decimal_number%10
-    mil = decimal_number/10
+    centena = int(decimal_number%10)
+    mil = int(decimal_number/10)
+
+
+    #CENTENAS
+
+    if centena == 1:
+        roman_number = roman_number + "C"
+
+    if centena == 2:
+        roman_number = roman_number + "CC"
+
+    if centena == 3:
+        roman_number = roman_number + "CCC"
+
+    if centena == 4:
+        roman_number = roman_number + "CD"
+
+    if centena == 5:
+        roman_number = roman_number + "D"
+    
+    if centena == 6:
+        roman_number = roman_number + "DC"
+
+    if centena == 7:
+        roman_number = roman_number + "DCC"
+
+    if centena == 8:
+        roman_number = roman_number + "DCCC"
+
+    if centena == 9:
+        roman_number = roman_number + "CM"
+
+    #DECENAS
+
+    if decena == 1:
+        roman_number = roman_number + "X"
+
+    if decena == 2:
+        roman_number = roman_number + "XX"
+
+    if decena == 3:
+        roman_number = roman_number + "XXX"
+
+    if decena == 4:
+        roman_number = roman_number + "XL"
+
+    if decena == 5:
+        roman_number = roman_number + "L"
+    
+    if decena == 6:
+        roman_number = roman_number + "LX"
+
+    if decena == 7:
+        roman_number = roman_number + "LXX"
+
+    if decena == 8:
+        roman_number = roman_number + "LXXX"
+
+    if decena == 9:
+        roman_number = roman_number + "XC"
 
     #UNIDADES
 
