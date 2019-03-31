@@ -22,6 +22,12 @@ def decimal_a_romano(decimal):
         centena = letras [0] 
         decena = letras [1]
         unidad = letras[2]
+    if len(letras) == 4:
+        mil = letras [0]
+        centena = letras [1] 
+        decena = letras [2]
+        unidad = letras[3]
+    
     
 
     
@@ -85,8 +91,17 @@ def decimal_a_romano(decimal):
     if centena == '9':
         rc = 'CM'
 
+
+    if mil == '1':
+        rm = 'M'
+    if mil == '2':
+        rm = 'MM'
+    if mil == '3':
+        rm = 'MMM'
+    
+    #Para el 4000 cambia la notación, voy a hacerlo hasta el 3999
         
-    return rc + rd + ru
+    return rm + rc + rd + ru
     
 
 

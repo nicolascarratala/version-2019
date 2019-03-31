@@ -134,7 +134,48 @@ class TestDecimal(unittest.TestCase):
         self.assertEqual(romanotest, 'CMXCIX')
 
 
+    def test_1359 (self):
+        romanotest = decimal_a_romano(1359)
+        self.assertEqual(romanotest, 'MCCCLIX')
+
+    def test_1416 (self):
+        romanotest = decimal_a_romano(1416)
+        self.assertEqual(romanotest, 'MCDXVI')
+
+    def test_2307 (self):
+        romanotest = decimal_a_romano(2307)
+        self.assertEqual(romanotest, 'MMCCCVII')
     
+
+    def test_2579 (self):
+        romanotest = decimal_a_romano(2579)
+        self.assertEqual(romanotest, 'MMDLXXIX')
+
+    def test_3091 (self):
+        romanotest = decimal_a_romano(3091)
+        self.assertEqual(romanotest, 'MMMXCI')
+
+    def test_3707 (self):
+        romanotest = decimal_a_romano(3707)
+        self.assertEqual(romanotest, 'MMMDCCVII')
+
+
+    
+
+    def test_3833(self):
+        romanotest = decimal_a_romano(3833)
+        self.assertEqual(romanotest,'MMMDCCCXXXIII')
+
+
+    
+    def test_3999(self):
+        romanotest = decimal_a_romano(3999)
+        self.assertEqual(romanotest,'MMMCMXCIX')
+
+
+
+
+
     
 
     
