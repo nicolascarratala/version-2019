@@ -111,6 +111,16 @@ class TestRomanNumbers(unittest.TestCase):
         decimal_number = roman_to_decimal('CMLIV')
         self.assertEqual(decimal_number,954)
 
+    def test_roman_MMDLXXIX_to_decimal(self):
+        decimal_number = roman_to_decimal('MMDLXXIX')
+        self.assertEqual(decimal_number,2579)
+
+    def test_roman_MMMDCCCXXXIII_to_decimal(self):
+        decimal_number = roman_to_decimal('MMMDCCCXXXIII')
+        self.assertEqual(decimal_number,3833)
+
+    
+
        
     
 

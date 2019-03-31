@@ -65,12 +65,85 @@ class TestDecimal(unittest.TestCase):
         self.assertEqual(romanotest, 'XIX')
     def test_20 (self):
         romanotest = decimal_a_romano(20)
-        self.assertEqual(romanotest, 'XX')
+        self.assertEqual(romanotest, 'XX')    
     
+    def test_24(self):
+        romanotest = decimal_a_romano(24)
+        self.assertEqual(romanotest,'XXIV')
+    def test_43(self):
+        romanotest = decimal_a_romano(43)
+        self.assertEqual(romanotest,'XLIII')
+    def test_58(self):
+        romanotest = decimal_a_romano(58)
+        self.assertEqual(romanotest,'LVIII')  
+        
+    def test_69 (self):
+        romanotest = decimal_a_romano(69)
+        self.assertEqual(romanotest, 'LXIX')
 
+    def test_72 (self):
+        romanotest = decimal_a_romano(72)
+        self.assertEqual(romanotest,'LXXII')    
+    
+    
     def test_99 (self):
         romanotest = decimal_a_romano(99)
         self.assertEqual(romanotest, 'XCIX')
+
+    def test_100 (self):
+        romanotest = decimal_a_romano(100)
+        self.assertEqual(romanotest, 'C')
+
+    def test_102 (self):
+        romanotest = decimal_a_romano(102)
+        self.assertEqual(romanotest, 'CII')
+
+    def test_125 (self):
+        romanotest = decimal_a_romano(125)
+        self.assertEqual(romanotest, 'CXXV')
+
+    def test_149 (self):
+        romanotest = decimal_a_romano(149)
+        self.assertEqual(romanotest, 'CXLIX')
+    
+
+    def test_200 (self):
+        romanotest = decimal_a_romano(200)
+        self.assertEqual(romanotest, 'CC')
+
+    def test_258 (self):
+        romanotest = decimal_a_romano(258)
+        self.assertEqual(romanotest, 'CCLVIII')
+
+
+    def test_478 (self):
+        romanotest = decimal_a_romano(478)
+        self.assertEqual(romanotest, 'CDLXXVIII')
+
+    def test_693 (self):
+        romanotest = decimal_a_romano(693)
+        self.assertEqual(romanotest, 'DCXCIII')
+
+   
+    def test_954 (self):
+        romanotest = decimal_a_romano(954)
+        self.assertEqual(romanotest, 'CMLIV')
+
+    def test_999 (self):
+        romanotest = decimal_a_romano(999)
+        self.assertEqual(romanotest, 'CMXCIX')
+
+
+    
+    
+
+    
+
+    
+    
+
+
+    
     
 
 

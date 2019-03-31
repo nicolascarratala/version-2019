@@ -18,7 +18,10 @@ def decimal_a_romano(decimal):
     if len(letras)==2:
         decena = letras [0]
         unidad = letras[1]
-     
+    if len(letras) == 3:
+        centena = letras [0] 
+        decena = letras [1]
+        unidad = letras[2]
     
 
     
@@ -62,8 +65,28 @@ def decimal_a_romano(decimal):
     if decena == '9':
         rd = 'XC'
 
+
+    if centena == '1':
+        rc = 'C'
+    if centena == '2':
+        rc = 'CC'
+    if centena == '3':
+        rc = 'CCC'
+    if centena == '4':
+        rc = 'CD'
+    if centena == '5':
+        rc = 'D'
+    if centena == '6':
+        rc = 'DC'
+    if centena == '7':
+        rc = 'DCC'
+    if centena == '8':
+        rc = 'DCCC'
+    if centena == '9':
+        rc = 'CM'
+
         
-    return rd + ru
+    return rc + rd + ru
     
 
 
