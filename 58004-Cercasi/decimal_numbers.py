@@ -70,14 +70,44 @@ def decimal_to_roman(decimal_number):
         if decimal[1]=='8':
             decena=decena + "LXXX"
     
-
+        if decimal[1]=='9':
+            decena=decena + "XC"
     
-        roman_number= decena+unidad
-   
+    if cantidad>= 3:
         
         
+        if decimal[2]=='0':
+            centena=centena + ''
+        
+        if decimal[2]=='1': 
+            centena=centena + "C"
 
-             
-     
+        if decimal[2]=='2':
+            centena=centena + "CC"
+        
+        if decimal[2]=='3':
+            centena=centena + "CCC"
+        
+        if decimal[2] == '4':
+            centena=centena + "CD"
+        
+        if decimal[2]=='5':
+            centena=centena + "D"
+        
+        if decimal[2]=='6':
+            centena=centena + "DC"
+        
+        if decimal[2]=='7':
+            centena=centena + "DCC"
+        
+        if decimal[2]=='8':
+            centena=centena + "DCCC"
+        
+        if decimal[2]=='9':
+            centena=centena + "CM"
+    
+    
+    roman_number= decena+unidad
+              
       
     return roman_number
