@@ -107,7 +107,7 @@ def decimal_to_roman(decimal_number):
             centena=centena + "CM"
     
     
-    roman_number= decena+unidad
+    roman_number= centena+decena+unidad
               
       
     return roman_number
