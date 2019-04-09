@@ -21,7 +21,7 @@ class TestNumbersFinder(unittest.TestCase):
 
     def test_find_max_empty_list(self):
         max_number = find_max([])
-        self.assertIsNone(max_number)
+        self.assertIsNone(max_number, [])
 
 
 if __name__ == '__main__':
