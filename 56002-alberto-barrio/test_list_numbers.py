@@ -22,6 +22,13 @@ class TestNumbersFinder(unittest.TestCase):
     def test_find_max_empty_list(self):
         max_number = find_max([])
         self.assertIsNone(max_number)
+
+    def test_find_max_list_is_not_a_list_UGLY(self):
+        try:
+            find_max(1234)
+            self.fail()
+        except Exception:
+            pass
 #Test fix pipe
 
 if __name__ == '__main__':
