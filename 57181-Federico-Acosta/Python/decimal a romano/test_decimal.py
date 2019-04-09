@@ -2,7 +2,7 @@ import unittest
 import array as arr
 from decimal_numbers import decimal_to_roman
 
-class TestRomanNumbers(unittest.TestCase):
+class TestDecimal(unittest.TestCase):
     
     def test_decimal_1_to_roman(self):
         roman_number = decimal_to_roman(1)
