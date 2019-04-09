@@ -29,6 +29,34 @@ class TestNumbersFinder(unittest.TestCase):
             self.fail()
         except Exception:
             pass
+    def test_find_max_elem_is_not_a_number_UGLY(self):
+        try:
+            find_max([1234, 'hola'])
+            self.fail()
+        except Exception:
+            pass
+    
+    def test_find_max_list_is_not_a_list_UGLY_2(self):
+        from list_numbers import NotAListException
+        from list_numbers import NotAllNumberInListException
+        try:
+            find_max(1234)
+            self.fail()
+        except NotAListException:
+            pass
+        except NotAllNumberInListException:
+            self.fail()
+
+    def test_find_max_list_not_all_number_in_list_UGLY(self):
+        from list_numbers import NotAListException
+        from list_numbers import NotAllNumberInListException
+        try:
+            find_max([1, 2, 3, 4, 'HOLA'])
+            self.fail()
+        except NotAListException:
+            self.fail()
+        except NotAllNumberInListException:
+            pass
 #Test fix pipe
 
 if __name__ == '__main__':
