@@ -2,6 +2,8 @@ def decimal_to_roman(decimal_number):
     
     roman_number = ""
     
+    #CALCULA DE MODULO Y CORRE LA COMA
+
     unidad = int(decimal_number%10)
     decimal_number = decimal_number/10
     decena = int(decimal_number%10)
