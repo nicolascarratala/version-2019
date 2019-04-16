@@ -1,21 +1,18 @@
+def interfaz_factorial (palabra):
+    from factorial import factorial
+    try:
+        n=int(palabra)
+        return factorial(n)
+
+    except:
+
+        return 'Error'   
+
+
+
 def main():
-    palabra=input('Ingrese un numero')
+    palabra=input('Ingrese un numero: ')
     result=interfaz_factorial(palabra)
     print(result)
+main()
 
-def interfaz_factorial (palabra):
-   from factorial import factorial
-   try:
-    n=int(palabra)
-    return factorial(n)
-
-   except:
-    return 'Error'   
-    
-    
-    
-    
-    
-    
-    if not isinstance (number,int):
-        return 'Error'
