@@ -15,7 +15,7 @@ class TestInterfazFactorial(unittest.TestCase):
 
         self.assertEqual(result,'Error')
 
-    def test_interfaz_factorial_(self):
+   def test_interfaz_factorial_vacio(self):
     
         result=interfaz_factorial('')
 
