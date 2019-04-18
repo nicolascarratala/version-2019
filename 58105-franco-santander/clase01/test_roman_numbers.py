@@ -1,5 +1,5 @@
 import unittest
-from ronam_numbers import roman_to_decimal
+from ronam_numbers import (roman_to_decimal,decimal_to_roman,)
 
 
 class TestRomanNumbers(unittest.TestCase):
@@ -130,5 +130,10 @@ class TestRomanNumbers(unittest.TestCase):
    def test_roman_CMLIV_to_decimal(self):
        decimal_number = roman_to_decimal('CMLIV')
        self.assertEqual(decimal_number, 954)                             
+
+class TestDecimalNumbers(unittest.TestCase):
+   def test_decimal_1_to_roman(self):
+       roman_number = decimal_to_roman("1")
+       self.assertEqual(roman_number, 'I') 
 if __name__ == '__main__':
    unittest.main()
