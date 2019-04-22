@@ -7,11 +7,6 @@ def cod (w,c):
     n = -1
     s = ''
 
-
-    if not isinstance (w, str) or not isinstance (c, str):
-        raise Exception()
-
-
     for l in w :
         
         if n < len(c)-1:
@@ -19,13 +14,8 @@ def cod (w,c):
         else:
             n = 0
 
-
-        if not l in d or not c[n] in d:
-            raise Exception
-
-
-        if d[l]+d[c[n]]-1 < 26:
-            s += e[d[l]+d[c[n]]-1]
+        if d[l]+d[c[n]]-1 <= 26:
+            s += e[d[l]+d[c[n]]-1]s
         else:
             s += e[d[l]+d[c[n]]-27]
 

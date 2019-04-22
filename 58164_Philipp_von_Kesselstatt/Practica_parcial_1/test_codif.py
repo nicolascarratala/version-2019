@@ -11,27 +11,6 @@ class test_codif(unittest.TestCase):
         code = cod('wikihowisthebest', 'lime')
         self.assertEqual('hqwmswimdbtimmex', code)
 
-    def test_codif_3 (self):
-        try:
-            cod(1, 16)
-            self.fail()
-        except Exception:
-            pass
-
-
-    def test_codif_4 (self):
-        try:
-            cod('_', '!')
-            self.fail()
-        except Exception:
-            pass
-
-    def test_codif_5 (self):
-        try:
-            cod('', '')
-            self.fail()
-        except Exception:
-            pass
 
 if __name__ == '__main__':
    unittest.main()
