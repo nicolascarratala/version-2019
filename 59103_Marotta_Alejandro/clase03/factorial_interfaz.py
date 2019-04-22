@@ -1,23 +1,23 @@
 from factorial import factorial
 
-
-
 def factorial_interfaz(number): 
 
     try:
-        result = int(number)   
-        if abs(result) != result:
-            result = "Error, el valor ingresado no es un numero entero positivo"
+        number = int(number)
+        result = factorial(number) 
+        print (result)
         return result
-    except:
-        return "Error, el valor ingresado no es un numero entero"
+        
+    except Exception as ex:
+        print ("Valor no valido")
+        print (ex)
+        return ("Valor no valido")
+
             
 
 
 def main():    
-    number = input("Ingrese un numero para calcular su factorial: ")
-    result = factorial_interfaz(number)
-    result = factorial(int(number))
-    print(result)
+    number1 = input("Ingrese un numero para calcular su factorial: ")
+    factorial_interfaz(number1)
 
 main()
